@@ -18,7 +18,7 @@
     <tr>
       <td>{{eth}} ETH</td>
       <td>{{limit}}</td>
-      <td><a class='btn' href="mint.html#address={{address}}&key={{key}}">Go</td</a></td>
+      <td><a class='btn' href="mint.html#address={{address}}&key={{key}}">MINT NOW</td</a></td>
     </tr>
   {{/each}}
   </table>
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const placeholder = await f0.placeholder()
     const invites = await f0.myInvites()
     document.querySelector(".box").innerHTML = template({
-      title: `${name} (${symbol}) Invite List`,
+      title: `${name} (${symbol}) PUBLIC MINT`,
       image: placeholder.converted.image,
       items: Object.keys(invites).map((key, index) => {
         return {
